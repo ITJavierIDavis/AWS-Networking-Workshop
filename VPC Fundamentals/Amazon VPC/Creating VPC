@@ -1,0 +1,26 @@
+Amazon Virtual Private Cloud (Amazon VPC) enables you to launch AWS resources into a virtual network that you've defined. This virtual network closely resembles a traditional network that you'd operate in your own data center, with the benefits of using the scalable infrastructure of AWS.
+
+To get started, navigate to the Your VPCs tab  in the VPC section of the console and click Create VPC button.
+
+Create VPC
+
+Select VPC only under Resources to create
+Enter VPC A as the Name tag
+Specify 10.0.0.0/16 as IPv4 CIDR block.
+Do not enable IPv6.
+Leave Default selected as Tenancy.
+Accept proposed Tags
+Click Create VPC
+Create VPC A
+
+After completing these steps, you should have a new VPC listed under Your VPCs
+
+VPC A Created
+
+Click on Actions and select Edit VPC settings from the dropdown
+
+Select DNS hostnames
+
+Check the box to enable DNS hostnames and select Save. Enable DNS hostnames
+
+Congratulations, your first VPC is now built
