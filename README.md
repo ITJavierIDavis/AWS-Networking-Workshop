@@ -1,74 +1,154 @@
-🌐 AWS Networking Workshop 🚀
+AWS Networking Workshop
 
-🔍 Overview
+Overview
 
-Welcome to the AWS Networking Workshop repository! This hands-on workshop covers everything from the basics of AWS networking to advanced configurations. You'll learn how to design, secure, and monitor your AWS network like a pro. 💡
+This workshop provides a hands-on experience with Amazon Virtual Private Cloud (VPC) fundamentals, connectivity options, security controls, and network monitoring within AWS. By the end of this workshop, participants will have a deep understanding of networking components, best practices, and advanced configurations in AWS.
 
-📌 Topics Covered
+1. VPC Fundamentals
 
-✅ VPC (Virtual Private Cloud) – The backbone of AWS networking.
-✅ Subnets – Public & private subnet configurations.
-✅ Route Tables & Internet Gateways – Directing traffic efficiently.
-✅ NAT Gateway & NAT Instances – Internet access for private subnets.
-✅ VPC Peering – Connecting multiple VPCs seamlessly.
-✅ Transit Gateway – Scaling network connectivity.
-✅ VPN (Virtual Private Network) – Secure on-premises connectivity.
-✅ Security Groups & Network ACLs – Fortifying network security.
-✅ VPC Flow Logs & Monitoring – Observability and troubleshooting tools.
+Amazon VPC
 
-📋 Prerequisites
+Understanding VPCs and their components
 
-Before diving in, make sure you have:
+Creating a VPC using the AWS Management Console or AWS CLI
 
-🔑 An AWS account with necessary permissions.
+Subnets
 
-💻 Basic knowledge of cloud networking.
+Configuring public and private subnets
 
-🛠️ AWS CLI installed and configured.
+Understanding subnet CIDR blocks and availability zones
 
-🌍 Terraform or AWS CloudFormation (if deploying IaC).
+Network ACLs
 
-🚀 Getting Started
+Implementing Network ACLs for stateless traffic filtering
 
-1️⃣ Clone the repo:
+Configuring inbound and outbound rules
 
-git clone https://github.com/your-username/aws-networking-workshop.git
-cd aws-networking-workshop
+Route Tables
 
-2️⃣ Explore the modules – Each folder contains detailed setup instructions.
-3️⃣ Deploy configurations using AWS CLI or Terraform.
-4️⃣ Monitor network traffic with AWS tools like VPC Flow Logs.
+Associating route tables with subnets
 
-🏗️ Workshop Structure
+Understanding route propagation
 
-The workshop is structured into self-contained modules, each designed to give you practical experience with AWS networking. Expect:
+Internet Connectivity
 
-📖 Step-by-step tutorials with examples.
+Configuring an Internet Gateway (IGW)
 
-⚡ Hands-on labs for real-world scenarios.
+Enabling internet access for public subnets
 
-🛡️ Best security practices to protect your network.
+VPC Endpoints
 
-🤝 Contributing
+Configuring Interface and Gateway Endpoints
 
-We love contributions! Found a bug? Have an idea? Feel free to:
+Securing private connections to AWS services
 
-📝 Open an issue.
+EC2 Instances
 
-🔀 Submit a pull request.
+Launching EC2 instances in a VPC
 
-💡 Share feedback to improve the content.
+Assigning Elastic IPs and private IPs
 
-📜 License
+Test Connectivity
 
-This project is licensed under the MIT License.
+Using ping, traceroute, and telnet for testing network reachability
 
-📩 Contact & Support
+Clean Up
 
-Need help? Reach out via:
+Deleting resources to avoid unnecessary costs
 
-✉️ Email: itjavieridavis@outlook.com
+2. Multiple VPCs
 
-🐙 GitHub Issues: Open an issue
+VPC Peering
 
-🚀 Let’s build secure and scalable AWS networks together! 🌍
+Establishing VPC peering connections
+
+Configuring route tables for cross-VPC communication
+
+Transit Gateway (TGW)
+
+Understanding AWS Transit Gateway
+
+Connecting multiple VPCs and on-premises networks
+
+TGW Route Tables
+
+Managing route propagation across different VPCs
+
+Clean Up
+
+Removing peering connections and TGW configurations
+
+3. Security Controls
+
+Network ACLs
+
+Implementing additional security rules at the subnet level
+
+Security Groups
+
+Configuring Security Groups for instance-level security
+
+Defining inbound and outbound rules
+
+Endpoint Policies
+
+Restricting access using AWS Endpoint policies
+
+Clean Up
+
+Deleting security configurations and rules
+
+4. Connecting to On-Premises
+
+Establish VPN Connection
+
+Creating a Site-to-Site VPN connection
+
+Configuring Customer Gateway and Virtual Private Gateway
+
+Explore Hybrid Environment
+
+Integrating on-premises infrastructure with AWS
+
+Configuring hybrid network setups
+
+Hybrid DNS
+
+Implementing AWS Route 53 Resolver for hybrid DNS resolution
+
+Clean Up
+
+Terminating VPN connections and related resources
+
+5. Network Monitoring
+
+CloudWatch
+
+Using Amazon CloudWatch for network monitoring
+
+Setting up CloudWatch alarms
+
+VPC Flow Logs
+
+Enabling and analyzing VPC Flow Logs for traffic monitoring
+
+Clean Up
+
+Disabling monitoring tools and deleting logs
+
+6. Advanced Topics
+
+AWS Gateway Load Balancer
+
+Understanding AWS Gateway Load Balancer
+
+Configuring traffic flow for security appliances
+
+AWS Transit Gateway Multicast
+
+Exploring multicast support in AWS Transit Gateway
+
+Conclusion
+
+By following this workshop, participants will gain practical experience in designing, implementing, and securing AWS network architectures. They will also be able to troubleshoot connectivity issues and optimize network performance within AWS environments.
+
